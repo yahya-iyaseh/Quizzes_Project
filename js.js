@@ -3,7 +3,7 @@ const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
 const show = document.querySelector('#show');
 const boxShow = document.querySelector('#box-show');
-
+const radios = document.getElementsByTagName('input');
 
  show.addEventListener('click', e =>{
   boxShow.classList.toggle('d-none');
@@ -39,6 +39,10 @@ const timer = setInterval(() =>{
  }, 10);
  boxShow.classList.toggle('d-none');
  show.classList.remove('d-none');
+
+ for(i = 0; i <radios.length;i++ ){
+  radios[i].checked = false; 
+ }
 });
 
 
