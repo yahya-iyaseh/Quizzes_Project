@@ -8,6 +8,8 @@ const radios = document.getElementsByTagName('input');
  show.addEventListener('click', e =>{
   boxShow.classList.toggle('d-none');
   show.classList.add('d-none');
+  result.classList.add('d-none');
+ 
  });
 
 form.addEventListener('submit', e =>{
@@ -43,6 +45,7 @@ const timer = setInterval(() =>{
  for(i = 0; i <radios.length;i++ ){
   radios[i].checked = false; 
  }
+
 });
 
 
